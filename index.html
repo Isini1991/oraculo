@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oráculo — Signal from the underground</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="A private design study for Oráculo Records. Independent electronic music, darkwave and physical records.">
+<meta name="theme-color" content="#e8e5dc">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0}body{background:#e8e5dc;color:#111;font-family:'Space Grotesk',Arial,sans-serif}a{color:inherit}header{height:88px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #b5b2a9}.brand{font-weight:700;font-size:22px;letter-spacing:-1px;text-decoration:none}nav{display:flex;gap:32px;font:11px monospace;text-transform:uppercase}nav a{text-decoration:none}.hero{position:relative;min-height:800px;height:calc(100svh - 88px);overflow:hidden;padding:35px 4vw}.eyebrow{font:11px monospace;letter-spacing:1px;position:relative;z-index:2}.hero h1{position:relative;z-index:2;font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(110px,23.5vw,400px);line-height:.8;letter-spacing:-.015em;margin:40px 0 0;font-weight:700;pointer-events:none}.hero h1 span{display:inline-block;color:#c12e24}#stage{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}.bottom{position:absolute;bottom:40px;left:4vw;right:4vw;display:flex;justify-content:space-between;align-items:flex-end;z-index:4}.bottom p{font-size:15px;line-height:1.5;max-width:250px}.cta{display:inline-flex;align-items:center;gap:40px;border:1px solid #222;padding:20px 24px;text-decoration:none;font-size:12px;text-transform:uppercase}.label{font:10px monospace;letter-spacing:1px}.proof{padding:50px 4vw;background:#141414;color:#e8e5dc}.proof h2{font-size:40px;letter-spacing:-2px}canvas{display:block}a:focus-visible{outline:3px solid #c12e24;outline-offset:5px}.fallback{display:none;position:absolute;width:45vw;aspect-ratio:1;top:30%;left:35%;border-radius:50%;background:repeating-radial-gradient(#151515 0 2px,#303030 3px 4px);z-index:3}.no-webgl .fallback{display:block}@media(max-width:700px){header{height:70px}nav{gap:16px}.hero{min-height:700px;height:calc(100svh - 70px)}.hero h1{font-size:23vw;margin-top:70px}.bottom{gap:20px}.bottom p{font-size:13px;max-width:170px}.cta{padding:15px;gap:20px;font-size:10px}}
+</style>
+</head>
+<body>
+<header><a class="brand" href="#">ORÁCULO®</a><nav><a href="#releases">Releases ↗</a><a href="https://oraculorecords.bandcamp.com/" target="_blank" rel="noopener">Bandcamp ↗</a></nav></header>
+<main><section class="hero" id="hero"><div class="eyebrow">INDEPENDENT ELECTRONIC MUSIC LABEL · SPAIN</div><h1>ORÁCUL<span>O</span></h1><div id="stage" aria-label="Rotating three-dimensional vinyl sculpture" role="img"></div><div class="fallback" aria-hidden="true"></div><div class="bottom"><div><div class="label">A SIGNAL FROM THE UNDERGROUND</div><p>Plastical jewels for darkwave enthusiast collectors.</p></div><a class="cta" href="#releases">Explore the catalogue <span>↓</span></a></div></section><section class="proof" id="releases"><div class="label">01 / THE COLLECTION</div><h2>Cut from a different frequency.</h2><p>Independent sound. Physical form.</p></section></main>
+<script src="three.min.js"></script>
+<script>
+(()=>{'use strict';
+const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const state={ready:false,frames:0,webgl:false,error:null};let renderer,scene,camera,disc,raf;const host=document.getElementById('stage');
+window.__oraculo={getState:()=>({...state}),force:()=>{if(renderer){renderer.render(scene,camera);state.frames++}}};
+try{
+renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));host.appendChild(renderer.domElement);renderer.outputEncoding=THREE.sRGBEncoding;
+scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(35,1,.1,100);camera.position.set(0,0,12);
+scene.add(new THREE.AmbientLight(0xffffff,.7));const light=new THREE.DirectionalLight(0xffffff,2);light.position.set(-4,7,7);scene.add(light);const red=new THREE.DirectionalLight(0xe04832,.6);red.position.set(5,-3,3);scene.add(red);
+disc=new THREE.Group();scene.add(disc);
+const body=new THREE.Mesh(new THREE.CylinderGeometry(2.8,2.8,.085,128),new THREE.MeshStandardMaterial({color:0x151515,roughness:.33,metalness:.5}));body.rotation.x=Math.PI/2;disc.add(body);
+for(let i=0;i<80;i++){const groove=new THREE.Mesh(new THREE.TorusGeometry(.98+i*.022,.0035,3,160),new THREE.MeshStandardMaterial({color:i%5===0?0x626262:0x2b2b2b,metalness:.65,roughness:.3}));groove.position.z=.045;disc.add(groove)}
+const c=document.createElement('canvas');c.width=c.height=512;const x=c.getContext('2d');x.fillStyle='#be3227';x.fillRect(0,0,512,512);x.fillStyle='#e8e5dc';x.textAlign='center';x.font='bold 62px Arial';x.fillText('ORÁCULO',256,170);x.font='20px monospace';x.fillText('RECORDS',256,205);x.font='14px monospace';x.fillText('PLASTICAL JEWELS',256,375);x.beginPath();x.arc(256,256,25,0,Math.PI*2);x.fillStyle='#111';x.fill();
+const label=new THREE.Mesh(new THREE.CircleGeometry(.96,96),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(c)}));label.position.z=.052;disc.add(label);disc.rotation.set(.5,-.35,-.18);disc.position.set(.5,-.55,0);
+function resize(){const r=host.getBoundingClientRect();renderer.setSize(r.width,r.height);camera.aspect=r.width/r.height;camera.position.z=r.width<700?16:12;camera.updateProjectionMatrix();renderer.render(scene,camera)}resize();addEventListener('resize',resize);
+let tx=0,ty=0;addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*.3;ty=(e.clientY/innerHeight-.5)*.2},{passive:true});
+function tick(){if(!document.hidden){if(!reduced){disc.rotation.z-=.001;disc.rotation.y+=(-.35+tx-disc.rotation.y)*.035;disc.rotation.x+=(.5+ty-disc.rotation.x)*.035}renderer.render(scene,camera);state.frames++}raf=requestAnimationFrame(tick)}state.ready=true;state.webgl=true;tick();
+}catch(e){state.error=String(e);document.body.classList.add('no-webgl');console.error(e)}
+})();
+</script>
+</body></html>
