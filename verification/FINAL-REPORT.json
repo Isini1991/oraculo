@@ -1,10 +1,40 @@
 {
-  "run": "oraculo-clean-jptzg267",
+  "run": "oraculo-clean-xhvty8t1",
   "url": "http://127.0.0.1:8768/",
   "pass": true,
   "checks": [
     {
       "name": "WebGL ready",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl reduced 12 percent",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Spin speed tripled",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Real mouse drag begins on vinyl",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Drag turns record to reverse side",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Mouse release ends drag",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Orientation remains after release",
       "pass": true,
       "value": true
     },
@@ -95,6 +125,11 @@
     },
     {
       "name": "No horizontal overflow 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Mobile controls clear of vinyl",
       "pass": true,
       "value": true
     },
