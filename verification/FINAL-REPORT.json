@@ -1,0 +1,138 @@
+{
+  "run": "oraculo-clean-jptzg267",
+  "url": "http://127.0.0.1:8768/",
+  "pass": true,
+  "checks": [
+    {
+      "name": "WebGL ready",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Six release entries",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "No unsolicited media",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Pause button",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Paused rendering stops",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Manual rotation redraw",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Accent-insensitive search",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Empty search state",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Reset search",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Release dialog content",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Escape closes dialog",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Credits dialog",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "No horizontal overflow 1440",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Images loaded 1440",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "No horizontal overflow 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Images loaded 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "No horizontal overflow 768",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Images loaded 768",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "No horizontal overflow 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Images loaded 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Mobile menu opens",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Mobile navigation closes menu",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Reduced-motion respected",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Static fallback",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Double-click file support",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Local assets loaded",
+      "pass": true,
+      "value": true
+    }
+  ],
+  "consoleErrors": []
+}
