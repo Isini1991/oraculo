@@ -1,0 +1,54 @@
+{
+ "releases": [
+  {
+   "slug": "burning-the-edges",
+   "title": "Burning The Edges",
+   "artist": "POST ANALOG DISORDER",
+   "img": "assets/release-01.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/burning-the-edges",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=1948064144/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  },
+  {
+   "slug": "cap-tulo-iv-la-fiesta-seria-y-nuevas-formas-de-tecnaco",
+   "title": "Capítulo IV: La Fiesta Seria y Nuevas Formas de Tecnaco",
+   "artist": "ESTADO DE BIENESTAR",
+   "img": "assets/release-02.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/cap-tulo-iv-la-fiesta-seria-y-nuevas-formas-de-tecnaco",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=679811586/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  },
+  {
+   "slug": "ip3071",
+   "title": "IP307.1",
+   "artist": "IP307",
+   "img": "assets/release-03.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/ip3071",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=830267064/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  },
+  {
+   "slug": "r-hren",
+   "title": "Rühren",
+   "artist": "FRONTMASCHINE",
+   "img": "assets/release-04.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/r-hren",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=439330496/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  },
+  {
+   "slug": "digital-slave",
+   "title": "Digital Slave",
+   "artist": "DAMAGE CODE",
+   "img": "assets/release-05.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/digital-slave",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=3239795764/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  },
+  {
+   "slug": "metaf-sica",
+   "title": "Metafísica",
+   "artist": "PUERTA NEGRA",
+   "img": "assets/release-06.jpg",
+   "albumUrl": "https://oraculorecords.bandcamp.com/album/metaf-sica",
+   "embed": "https://bandcamp.com/EmbeddedPlayer/album=578555949/size=large/bgcol=111111/linkcol=ffffff/tracklist=false/artwork=small/transparent=true/"
+  }
+ ],
+ "portrait": "assets/keyi-edb3.png",
+ "edbArt": "assets/keyi-or141-1024.png"
+}
