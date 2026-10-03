@@ -1,0 +1,10 @@
+bandcamp.html
+keyi.html
+verification/*.png
+verification/*.jpg
+verification/oraculo-clean-*
+verification/LATEST-CHANGE.json
+verification/initial.json
+verification/railway-assets.json
+.DS_Store
+Thumbs.db

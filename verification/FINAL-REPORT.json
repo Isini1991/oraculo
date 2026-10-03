@@ -1,5 +1,5 @@
 {
-  "run": "oraculo-clean-xhvty8t1",
+  "run": "oraculo-clean-c7cgd09t",
   "url": "http://127.0.0.1:8768/",
   "pass": true,
   "checks": [
@@ -9,14 +9,49 @@
       "value": true
     },
     {
-      "name": "Vinyl reduced 12 percent",
+      "name": "Arrow buttons removed",
       "pass": true,
       "value": true
     },
     {
-      "name": "Spin speed tripled",
+      "name": "Bandcamp identity image installed",
       "pass": true,
       "value": true
+    },
+    {
+      "name": "Three speed choices",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Speed selected 33",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Measured RPM 33",
+      "value": 32.416715307828056,
+      "pass": true
+    },
+    {
+      "name": "Speed selected 45",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Measured RPM 45",
+      "value": 45.500199680420145,
+      "pass": true
+    },
+    {
+      "name": "Speed selected 78",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Measured RPM 78",
+      "value": 78.61733280585042,
+      "pass": true
     },
     {
       "name": "Real mouse drag begins on vinyl",
@@ -59,11 +94,6 @@
       "value": true
     },
     {
-      "name": "Manual rotation redraw",
-      "pass": true,
-      "value": true
-    },
-    {
       "name": "Accent-insensitive search",
       "pass": true,
       "value": true
@@ -99,12 +129,52 @@
       "value": true
     },
     {
+      "name": "Vinyl horizontally centered 1440",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Title overlap remains limited 1440",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl actually overlaps heading 1440",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl maximum diameter 1440",
+      "pass": true,
+      "value": true
+    },
+    {
       "name": "Images loaded 1440",
       "pass": true,
       "value": true
     },
     {
       "name": "No horizontal overflow 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl horizontally centered 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Title overlap remains limited 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl actually overlaps heading 1024",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl maximum diameter 1024",
       "pass": true,
       "value": true
     },
@@ -119,6 +189,26 @@
       "value": true
     },
     {
+      "name": "Vinyl horizontally centered 768",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Title overlap remains limited 768",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl actually overlaps heading 768",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl maximum diameter 768",
+      "pass": true,
+      "value": true
+    },
+    {
       "name": "Images loaded 768",
       "pass": true,
       "value": true
@@ -129,7 +219,27 @@
       "value": true
     },
     {
-      "name": "Mobile controls clear of vinyl",
+      "name": "Vinyl horizontally centered 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Title overlap remains limited 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl actually overlaps heading 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Vinyl maximum diameter 375",
+      "pass": true,
+      "value": true
+    },
+    {
+      "name": "Mobile controls below vinyl",
       "pass": true,
       "value": true
     },

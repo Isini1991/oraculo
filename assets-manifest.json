@@ -176,5 +176,11 @@
       "local_evidence": "keyi.html",
       "purpose": "Editorial photograph, release artwork, and article context."
     }
-  ]
+  ],
+  "brand_identity": {
+    "file": "assets/oraculo-bandcamp-profile.png",
+    "source": "User-supplied attachment image_3ae7af.png; identified by user as Bandcamp profile image",
+    "sha256": "dc325c42bad3657bcc8abb3e719275e9924211de837b54ccd1ae985d73bb543e",
+    "usage": "Unaltered image in The label section"
+  }
 }
